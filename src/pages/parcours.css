@@ -1,0 +1,77 @@
+/* Style pour la page "Parcours Académique" */
+#parcours {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#parcours h2 {
+    font-size: 2.5rem;
+    color: #A30053;
+    margin-bottom: 20px;
+}
+#parcours h4 {
+    font-size: 1rem;
+    color: #303030;
+    margin-bottom: 40px;
+}
+
+.education {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #c4359967;
+    box-shadow: 0 2px 8px rgba(235, 177, 222, 0.324);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.grid-item img {
+   
+    width: 100%; /* Ajuste la largeur au conteneur */
+    height: 150px; /* Fixe une hauteur uniforme */
+    object-fit: cover; /* Recadre l'image pour éviter les déformations */
+    border-radius: 8px;
+    border: 2px solid #c4359967;
+    
+}
+.grid-item img:hover {
+    
+    filter: brightness(90%); /* Réduit légèrement la luminosité pour signaler l'interaction */
+    cursor: pointer; 
+}
+
+
+.grid-item:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 4px 12px rgba(121, 121, 121, 0.5); 
+}
+
+.grid-item:hover p {
+    color: #A30053; /* Met en valeur le texte */
+    font-weight: bold;
+}
+
+
+.grid-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #A30053;
+    font-weight: bold;
+}
+
+
+
